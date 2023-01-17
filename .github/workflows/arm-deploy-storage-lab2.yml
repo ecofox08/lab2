@@ -3,7 +3,7 @@ name: Lab2 ARM-Template Deploy Storage
 on: workflow_dispatch
 
 env:
-  AZURERG: oadevsquad
+  AZURERG: TestDevSquad
   AZUREREGION: eastus
 
 jobs:
@@ -43,7 +43,7 @@ jobs:
     - name: Run ARM deploy
       uses: azure/arm-deploy@v1
       with:
-        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+        subscriptionId: ${{305e4553-2120-4b3a-8c11-ca8cbbdc012b}}
         resourceGroupName: ${{ env.AZURERG }}
         template: ./arm/lab2/azure-deploy-storage.json
         parameters: storageAccounts_name=iferrada
