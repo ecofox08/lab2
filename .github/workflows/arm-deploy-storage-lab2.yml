@@ -46,5 +46,5 @@ jobs:
         subscriptionId: ${{ 305e4553-2120-4b3a-8c11-ca8cbbdc012b }}
         resourceGroupName: ${{ env.AZURERG }}
         template: ./arm/lab2/azure-deploy-storage.json
-        parameters: storageAccounts_name=iferrada
+        parameters: storageAccounts_name=IfStorage
         # parameters: ./lab-storage/parameters.json
